@@ -1,3 +1,6 @@
 [submodule "netbox-docker"]
 	path = netbox-docker
 	url = https://github.com/netbox-community/netbox-docker
+[submodule "devicetype-library"]
+	path = devicetype-library
+	url = https://github.com/netbox-community/devicetype-library
