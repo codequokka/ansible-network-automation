@@ -20,9 +20,9 @@ $ docker compose up
 $ docker compose exec netbox /opt/netbox/netbox/manage.py createsuperuser
 ```
 
-### Device typ library
+### Device type library
 ```bash
-docker run -e "NETBOX_URL=http://localhost:8000/" -e "NETBOX_TOKEN=d692257431518d900fe45a661d9977fd2677b4b1" ghcr.io/minitriga/netbox-device-type-library-import
+$ export NETBOX_TOKEN=<your_netbox_token>
 
-docker run --add-host host.docker.internal:host-gateway -e "NETBOX_URL=http://host.docker.internal:8000/" -e "NETBOX_TOKEN=<your_netbox_token>" ghcr.io/minitriga/netbox-device-type-library-import
+$ docker run --add-host host.docker.internal:host-gateway -e "NETBOX_URL=http://host.docker.internal:8000/" -e "NETBOX_TOKEN=<your_netbox_token>" ghcr.io/minitriga/netbox-device-type-library-import
 ``
